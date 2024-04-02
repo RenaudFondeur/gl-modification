@@ -9,10 +9,17 @@
     - ![commit 2](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/b5649f991f81baf51d97156d64f51ed0c442c2b4)
 
 - supression du type paramétré de OOSpider :
-    - ![commit 2](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/7331df5465d62237eb4c42e5e47db045df14cd18)
+    - ![commit 3](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/7331df5465d62237eb4c42e5e47db045df14cd18)
 
-- remplacement de != null et .size() == 0 par CollectionUtils.isNotEmpty
-    - ![commit 2](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/fb2088c6c9fff4096143871c716fd80e1617420b)
+- remplacement de != null et .size() > 0 par CollectionUtils.isNotEmpty
+    - ![commit 4](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/e5fb83403ca852ba5925f7c9e0d988c49105b34a)
     
+- supression d'attribut non utilisé :
+    - ![commit 5](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/fbe1b51c77da5e7529cb07463815fd4fabb72d7c)
+
+- supression de spécification de type inutile :
+    - ![commit 6](https://gitlab-etu.fil.univ-lille.fr/renaud.fondeur.etu/gl-modification/-/commit/0cba90849b987ebf58eb4f1efcd20b06cdaad317)
+
+
 
 # conclusion
