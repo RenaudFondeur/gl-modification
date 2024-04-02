@@ -296,7 +296,7 @@ public class Spider implements Runnable, Task {
                 threadPool = new CountableThreadPool(threadNum);
             }
         }
-        if (startRequests != null) {
+        if (CollectionUtils.isNotEmpty(startRequests)) {
             for (Request request : startRequests) {
                 addRequest(request);
             }
@@ -541,7 +541,7 @@ public class Spider implements Runnable, Task {
     public <T> List<T> getAll(Collection<String> urls) {
         destroyWhenExit = false;
         spawnUrl = false;
-        if (startRequests!=null){
+        if (CollectionUtils.isNotEmpty(startRequests)){
             startRequests.clear();
         }
         for (Request request : UrlUtils.convertToRequests(urls)) {
