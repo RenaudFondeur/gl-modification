@@ -366,16 +366,7 @@ public class Spider implements Runnable, Task {
         logger.info("Spider {} closed! {} pages downloaded.", getUUID(), pageCount.get());
     }
 
-    /**
-     * @deprecated Use {@link #onError(Request, Exception)} instead.
-     */
-    @Deprecated
-    protected void onError(Request request) {
-    }
-
     protected void onError(Request request, Exception e) {
-        this.onError(request);
-
         if (CollectionUtils.isNotEmpty(spiderListeners)) {
             for (SpiderListener spiderListener : spiderListeners) {
                 spiderListener.onError(request, e);
