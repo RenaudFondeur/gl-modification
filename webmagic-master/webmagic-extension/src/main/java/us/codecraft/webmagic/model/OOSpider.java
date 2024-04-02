@@ -38,7 +38,7 @@ import java.util.List;
  * @author code4crafter@gmail.com <br>
  * @since 0.2.0
  */
-public class OOSpider<T> extends Spider {
+public class OOSpider extends Spider {
 
     private ModelPageProcessor modelPageProcessor;
 
@@ -78,7 +78,7 @@ public class OOSpider<T> extends Spider {
 
     @Override
     protected CollectorPipeline getCollectorPipeline() {
-        return new PageModelCollectorPipeline<T>(pageModelClasses.get(0));
+        return new PageModelCollectorPipeline(pageModelClasses.get(0));
     }
 
     public static OOSpider create(Site site, Class... pageModels) {
