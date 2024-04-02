@@ -44,9 +44,7 @@ public class OOSpider extends Spider {
 
     private ModelPipeline modelPipeline;
 
-    private PageModelPipeline pageModelPipeline;
-
-    private List<Class> pageModelClasses = new ArrayList<Class>();
+    private List<Class> pageModelClasses = new ArrayList<>();
 
     protected OOSpider(ModelPageProcessor modelPageProcessor) {
         super(modelPageProcessor);
