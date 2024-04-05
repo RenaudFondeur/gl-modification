@@ -36,8 +36,8 @@ public class FilePersistentBase {
     public void checkAndMakeParentDirecotry(String fullName) {
         int index = fullName.lastIndexOf(PATH_SEPERATOR);
         if (index > 0) {
-            String path = fullName.substring(0, index);
-            File file = new File(path);
+            String filePath = fullName.substring(0, index);
+            File file = new File(filePath);
             if (!file.exists()) {
                 file.mkdirs();
             }
