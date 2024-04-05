@@ -53,9 +53,6 @@ public class Page {
 
     private String charset;
 
-    public Page() {
-    }
-
     /**
      * Returns a {@link Page} with {@link #downloadSuccess} is {@code false}.
      *
