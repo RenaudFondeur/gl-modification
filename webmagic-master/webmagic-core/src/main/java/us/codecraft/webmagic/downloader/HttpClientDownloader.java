@@ -30,7 +30,7 @@ import us.codecraft.webmagic.utils.HttpClientUtils;
  * @author code4crafter@gmail.com <br>
  * @since 0.1.0
  */
-public class HttpClientDownloader extends AbstractDownloader {
+public class HttpClientDownloader extends Downloader {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 

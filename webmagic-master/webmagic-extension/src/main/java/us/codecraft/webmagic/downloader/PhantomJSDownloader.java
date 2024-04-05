@@ -15,7 +15,7 @@ import java.io.*;
  * @author dolphineor@gmail.com
  * @version 0.5.3
  */
-public class PhantomJSDownloader extends AbstractDownloader {
+public class PhantomJSDownloader extends Downloader {
     private static final Logger logger = LoggerFactory.getLogger(PhantomJSDownloader.class);
     private static String crawlJsPath;
     private static String phantomJsCommand = "phantomjs"; // default

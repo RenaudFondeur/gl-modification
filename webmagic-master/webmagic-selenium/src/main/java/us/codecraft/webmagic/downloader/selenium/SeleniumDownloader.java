@@ -11,7 +11,7 @@ import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Task;
-import us.codecraft.webmagic.downloader.AbstractDownloader;
+import us.codecraft.webmagic.downloader.Downloader;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.PlainText;
 
@@ -27,7 +27,7 @@ import java.util.Map;
  * Date: 13-7-26 <br>
  * Time: 下午1:37 <br>
  */
-public class SeleniumDownloader extends AbstractDownloader implements Closeable {
+public class SeleniumDownloader extends Downloader implements Closeable {
 
     private volatile WebDriverPool webDriverPool;
 

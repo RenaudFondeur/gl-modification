@@ -8,7 +8,7 @@ import us.codecraft.webmagic.selector.PlainText;
 /**
  * @author code4crafter@gmail.com
  */
-public class MockGithubDownloader implements Downloader{
+public class MockGithubDownloader extends Downloader{
 
     private String html = "\n" +
             "\n" +

@@ -14,7 +14,7 @@ import us.codecraft.webmagic.selector.PlainText;
 /**
  * @author code4crafter@gmail.com
  */
-public class MockGithubDownloader implements Downloader {
+public class MockGithubDownloader extends Downloader {
 
     @Override
     public Page download(Request request, Task task) {
