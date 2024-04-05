@@ -19,6 +19,13 @@ import java.nio.charset.Charset;
  */
 public abstract class CharsetUtils {
 
+    /**
+     * private constructor for the utility class CharsetUtils
+     */
+    private CharsetUtils() {
+
+    }
+
     private static Logger logger = LoggerFactory.getLogger(CharsetUtils.class);
 
     public static String detectCharset(String contentType, byte[] contentBytes) throws IOException {
