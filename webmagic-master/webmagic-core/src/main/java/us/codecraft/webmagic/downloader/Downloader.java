@@ -36,7 +36,7 @@ public abstract class Downloader {
      */
     public Html download(String url, String charset) {
         Page page = download(new Request(url), Site.me().setCharset(charset).toTask());
-        return (Html) page.getHtml();
+        return page.getHtml();
     }
 
     /**
