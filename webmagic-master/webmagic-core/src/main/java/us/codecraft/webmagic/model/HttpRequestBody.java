@@ -64,6 +64,11 @@ public class HttpRequestBody implements Serializable {
         this.encoding = encoding;
     }
 
+    /**
+     * return a message for an encoding error
+     * @param encoding the String representing the encoding that failed
+     * @return the error message
+     */
     public static String illegalEncoding(String encoding) {
         return "illegal encoding " + encoding;
     }
