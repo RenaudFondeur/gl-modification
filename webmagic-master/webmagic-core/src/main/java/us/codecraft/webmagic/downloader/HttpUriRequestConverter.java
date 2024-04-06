@@ -66,12 +66,11 @@ public class HttpUriRequestConverter {
         }
 
         RequestConfig.Builder requestConfigBuilder = RequestConfig.custom();
-        if (site != null) {
-            requestConfigBuilder.setConnectionRequestTimeout(site.getTimeOut())
-                    .setSocketTimeout(site.getTimeOut())
-                    .setConnectTimeout(site.getTimeOut())
-                    .setCookieSpec(CookieSpecs.STANDARD);
-        }
+       
+        requestConfigBuilder.setConnectionRequestTimeout(site.getTimeOut())
+                .setSocketTimeout(site.getTimeOut())
+                .setConnectTimeout(site.getTimeOut())
+                .setCookieSpec(CookieSpecs.STANDARD);
 
         if (proxy != null) {
             requestConfigBuilder.setProxy(new HttpHost(proxy.getHost(), proxy.getPort(), proxy.getScheme()));
